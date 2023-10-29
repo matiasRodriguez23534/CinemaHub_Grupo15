@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Estrenos</title>
+</head>
+<body>
+    <header>
+        <div class="header-image">
+            <a href="index.html">
+                <img src="imagenes/marquesina 1.png" alt="Imagen de encabezado">
+            </a>
+        </div>
+        <nav>
+            <ul>
+                <li class="dropdown">
+                    <a href="index.html">Películas</a>
+                    <ul class="submenu">
+                        <li><a href="drama.html">Drama</a></li>
+                        <li><a href="Comedia.html">Comedia</a></li>
+                        <li><a href="Accion.html">Acción</a></li>
+                        <li><a href="Animadas.html">Animadas</a></li>
+                        <li><a href="documentales.html">Documentales</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="series.html">Series</a>
+                    <ul class="submenu">
+                        <li><a href="netflix.html">Netflix</a></li>
+                        <li><a href="HBO.html">HBO</a></li>
+                        <li><a href="Disney.html">Disney</a></li>
+                        <li><a href="Paramount.html">Paramount</a></li>
+                        <li><a href="PrimeVideo.html">Prime Video</a></li>
+                    </ul>
+                </li>
+                <li><a href="estrenos.html">Estrenos</a></li>
+                <li><a href="Clasicos.html">Clásicos</a></li>
+            </ul>
+        </nav>
+        <div class="header-buttons">
+            <input type="text" placeholder="Buscar...">
+            <button type="submit">Buscar</button>
+            <a href="registro.html" class="boton"><button class="register-button">Registrarse</button></a>
+        </div>
+    </header>
+<div class="fondo">
+    <div class="main">
+       
+        <div class="contenedor" id="contenedor"></div>
+    
+        <div class="paginacion">
+            <button id="btnAnterior">Anterior</button>
+            <button id="btnSiguiente">Siguiente</button>
+        </div>
+        <div class="navigation">
+              <button onclick="prevSlide()">&#10094;</button>
+              <button onclick="nextSlide()">&#10095;</button>
+        </div>
+    </div>
+
+</div>
+<footer>
+    <div class="contenidoAll">
+    <div class="contenidos">
+
+        <div class="empresa">
+          <h1>Mas Información de la compañia</h1>
+          <p> CinemaHub es una plataforma en línea que ofrece a los usuarios acceso a una amplia
+            selección de películas y series  para transmitir en cualquier momento y lugar. 
+            Con un diseño intuitivo y funcionalidades interactivas, nuestro objetivo es brindar una 
+            experiencia cinematográfica excepcional a los amantes del cine.</p>
+        </div>
+
+        <div class="social-links">
+           <h1>Redes Sociales</h1>
+             <div class="fila">
+               
+               <a href="https://www.facebook.com/profile.php?id=61551637034605" target="_blank"><img src="iconos/facebook.png" alt="Facebook"></a>
+               
+               
+               <a href="https://twitter.com/home?logout=1695904724356" target="_blank"><img src="iconos/twitter.png" alt="Twitter"></a>
+               
+               <a href="https://www.instagram.com/cinema_hub15/?igshid=MzNlNGNkZWQ4Mg%3D%3D" target="_blank"><img src="iconos/instagram.png" alt="Instagram"></a>
+               
+           </div>
+        </div>
+
+        <div class="contactos">
+           <h1>Contactos</h1>
+           <div class="fila2">
+               <img src="iconos/work-from-home.png" alt="">
+               <label>Buenos Aires, Argentina, calle Rivadavia 1234, 3º Piso</label>
+           </div>
+           <div class="fila2">
+               <img src="iconos/telefono-inteligente.png" alt="">
+               <label>011 457-893-21</label>
+           </div>
+           <div class="fila2">
+               <img src="iconos/correo.png" alt="">
+               <label>cinema_hub5@hotmail.com</label>
+           </div>
+           <br>
+        </div>
+
+    </div>
+    <div class="contenidocopy">
+       <div class="copyright">
+           Copyright&copy;Grupo15
+       </div>
+    </div>
+   </div> 
+    </footer>
+<script src="js/appEstrenos.js"></script>
+</body>
+</html>
