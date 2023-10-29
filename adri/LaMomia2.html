@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>La Momia 2</title>
+</head>
+<body>
+    <header>
+        <div class="header-image">
+            <a href="index.html">
+                <img src="imagenes/marquesina 1.png" alt="Imagen de encabezado">
+            </a>
+        </div>
+        <nav>
+            <ul>
+                <li class="dropdown">
+                    <a href="peliculas.html">Películas</a>
+                    <ul class="submenu">
+                        <li><a href="drama.html">Drama</a></li>
+                        <li><a href="Comedia.html">Comedia</a></li>
+                        <li><a href="Accion.html">Accion</a></li>
+                        <li><a href="Animadas.html">Animadas</a></li>
+                        <li><a href="documentales.html">Documentales</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#">Series</a>
+                    <ul class="submenu">
+                        <li><a href="netflix.html">Netflix</a></li>
+                        <li><a href="HBO.html">HBO</a></li>
+                        <li><a href="Disney.html">Disney</a></li>
+                        <li><a href="Paramount.html">Paramount</a></li>
+                        <li><a href="PrimeVideo.html">Prime Video</a></li>
+                    </ul>
+                </li>
+                <li><a href="estrenos.html">Estrenos</a></li>
+                <li><a href="Clasicos.html">Clásicos</a></li>
+            </ul>
+        </nav>
+        <div class="header-buttons">
+            <input type="text" placeholder="Buscar...">
+            <button type="submit">Buscar</button>
+            <a href="registro.html" class="boton" ><button class="register-button">Registrarse</button></a>
+        </div>
+    </header>
+    <div class="fondo"> 
+    
+    <main>      
+     
+    <!-- Póster de la película -->
+    
+    <div class="contenedor">
+    <div class="poster">
+    <img src="https://static.voyalcine.net/Uploads/i2456B.jpg" alt="La Monja 2" >
+    <p>La Momia 2</p>
+    </div>
+    <div class="contenido">
+    <!-- Sinopsis 
+    <h2>Sinopsis</h2>-->
+    <p>1956 – Francia. Un sacerdote es asesinado. Un mal se está extendiendo. La secuela del gran éxito mundial sigue a la Hermana Irene cuando, una vez más, se encuentra cara a cara con Valak, la monja demonio.</p>
+    
+    <!-- Año de estreno -->
+    <h2>Año de Estreno</h2>
+    <p>2023</p>
+
+    <h2>Director</h2>
+    <p>Michael Chaves</p>
+    
+    <!-- Actores principales -->
+    <h2>Actores Principales</h2>
+    <ul>
+        <li> Taissa Farmiga</li>
+        <li>Jonas Bloquet</li>
+        <li>Storm Reid</li>
+        <!-- Añade más actores si es necesario -->
+    </ul>
+    </div>
+    </div>
+    
+</main> 
+<!-- Enlace al trailer -->
+<h2>Trailer</h2>
+    
+     
+<iframe width="560" height="315" src="https://www.youtube.com/embed/F-WkAbISDMg?si=Wbf3OjhLAVQ7bWzl" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<div class="video-container">
+    <div class="controls">
+        <select class="language-select">
+            <option value="es">Español</option>
+            <option value="es-latino">Español Latino</option>
+            <option value="en">Inglés</option>
+        </select>
+        <button class="download-button">Descargar</button>
+    </div>
+    <div class="video-wrapper">
+        <!-- Cambia el "src" con la URL de la película -->
+        <video class="video-player" controls>
+            <source src="URL_DEL_VIDEO" type="video/mp4">
+            Tu navegador no admite la reproducción de videos.
+        </video>
+        <div class="play-button">Ver Película</div>
+    </div>
+    
+</div>
+<div>
+<p>Calificación: <span id="rating">0</span>/5</p>
+<div id="ratingStars">
+  <span class="star" data-value="1">&#9733;</span>
+  <span class="star" data-value="2">&#9733;</span>
+  <span class="star" data-value="3">&#9733;</span>
+  <span class="star" data-value="4">&#9733;</span>
+  <span class="star" data-value="5">&#9733;</span>
+</div>
+
+<script src="js/main.js"></script> 
+</body>
+</html>

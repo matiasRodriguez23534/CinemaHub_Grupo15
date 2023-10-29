@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>La lista de Schindler</title>
+</head>
+<body>
+    <header>
+        <div class="header-image">
+            <a href="index.html">
+                <img src="imagenes/marquesina 1.png" alt="Imagen de encabezado">
+            </a>
+        </div>
+        <nav>
+            <ul>
+                <li class="dropdown">
+                    <a href="peliculas.html">Películas</a>
+                    <ul class="submenu">
+                        <li><a href="drama.html">Drama</a></li>
+                        <li><a href="Comedia.html">Comedia</a></li>
+                        <li><a href="Accion.html">Accion</a></li>
+                        <li><a href="Animadas.html">Animadas</a></li>
+                        <li><a href="documentales.html">Documentales</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="series.html">Series</a>
+                    <ul class="submenu">
+                        <li><a href="netflix.html">Netflix</a></li>
+                        <li><a href="HBO.html">HBO</a></li>
+                        <li><a href="Disney.html">Disney</a></li>
+                        <li><a href="Paramount.html">Paramount</a></li>
+                        <li><a href="PrimeVideo.html">Prime Video</a></li>
+                    </ul>
+                </li>
+                <li><a href="estrenos.html">Estrenos</a></li>
+                <li><a href="Clasicos.html">Clásicos</a></li>
+            </ul>
+        </nav>
+        <div class="header-buttons">
+            <input type="text" placeholder="Buscar...">
+            <button type="submit">Buscar</button>
+            <a href="registro.html" class="boton" ><button class="register-button">Registrarse</button></a>
+        </div>
+    </header>
+    <div class="fondo"> 
+    
+    <main>      
+     
+    <!-- Póster de la película -->
+    
+    <div class="contenedor">
+    <div class="poster">
+    <img src="data:image/jpeg;base64,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" alt="Póster de La lista de Schindler" >
+    <p>La lista de Schindler</p>
+    </div>
+    <div class="contenido">
+    <!-- Sinopsis 
+    <h2>Sinopsis</h2>-->
+    <p>El empresario alemán Oskar Schindler, miembro del Partido Nazi, pone en marcha un elaborado, costoso y arriesgado plan para salvar a más de mil judíos del Holocausto.</p>
+    
+    <!-- Año de estreno -->
+    <h2>Año de Estreno</h2>
+    <p>1993</p>
+
+    <h2>Director</h2>
+    <p>Steven Spielberg</p>
+    
+    <!-- Actores principales -->
+    <h2>Actores Principales</h2>
+    <ul>
+        <li>Liam Neeson</li>
+        <li>Ralph Fienne</li>
+        <li>Ben Kingsley</li>
+        <!-- Añade más actores si es necesario -->
+    </ul>
+    </div>
+    </div>
+    
+</main> 
+<!-- Enlace al trailer -->
+<h2>Trailer</h2>
+    
+     
+<iframe width="560" height="315" src="https://www.youtube.com/embed/245ZfVokG-Y?si=JoIknzGcvNl8ftod" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<div class="video-container">
+    <div class="controls">
+        <select class="language-select">
+            <option value="es">Español</option>
+            <option value="es-latino">Español Latino</option>
+            <option value="en">Inglés</option>
+        </select>
+        <button class="download-button">Descargar</button>
+    </div>
+    <div class="video-wrapper">
+        <!-- Cambia el "src" con la URL de la película -->
+        <video class="video-player" controls>
+            <source src="URL_DEL_VIDEO" type="video/mp4">
+            Tu navegador no admite la reproducción de videos.
+        </video>
+        <div class="play-button">Ver Película</div>
+    </div>
+    
+</div>
+<div>
+<p>Calificación: <span id="rating">0</span>/5</p>
+<div id="ratingStars">
+  <span class="star" data-value="1">&#9733;</span>
+  <span class="star" data-value="2">&#9733;</span>
+  <span class="star" data-value="3">&#9733;</span>
+  <span class="star" data-value="4">&#9733;</span>
+  <span class="star" data-value="5">&#9733;</span>
+</div>
+
+<script src="js/main.js"></script> 
+</body>
+</html>
