@@ -1,4 +1,5 @@
 let pagina = 1;
+let serieId;
 const btnAnterior = document.getElementById('btnAnterior');
 const btnSiguiente = document.getElementById('btnSiguiente');
 
@@ -30,20 +31,34 @@ const cargarSeries = async () => {
 
         if (respuesta.ok) {
             const datos = await respuesta.json();
-
+                
             let series = '';
             datos.results.forEach(serie => {
                 series += `
-                    <div class="card">
-                        <a href="pelicula.html">
-                            <img class="poster" src="https://image.tmdb.org/t/p/w500/${serie.poster_path}" >
-                        </a>
-                        <h3 class="titulo">${serie.name}</h3>
-                    </div>
+                <div class="card">
+                    <a href="pelicula.html">
+                    <img class="poster" src="https://image.tmdb.org/t/p/w500/${serie.poster_path}" data-id="${serie.id}">
+                    </a>
+                    <h3 class="titulo">${series.title}</h3>
+                </div>
                 `;
             });
 
             document.getElementById('contenedor').innerHTML = series;
+
+            // Obtener todos los elementos de imagen con la clase "poster"
+            const posters = document.querySelectorAll(".poster");
+            
+            // Agregar evento de clic a cada imagen
+            posters.forEach(poster => {
+                poster.addEventListener("click", function() {
+                    serieId = this.getAttribute("data-id");
+                    console.log("ID de la serie seleccionada:", serie);
+                    localStorage.setItem("serieId", serieId);
+                
+                });
+            });
+
         } else if (respuesta.status === 401) {
             console.log('Pusiste la llave mal');
         } else if (respuesta.status === 404) {

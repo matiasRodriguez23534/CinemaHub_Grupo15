@@ -48,6 +48,7 @@ document.addEventListener("DOMContentLoaded", function() {
                     poster.addEventListener("click", function() {
                         peliculaId = this.getAttribute("data-id");
                         console.log("ID de la película seleccionada:", peliculaId);
+                        localStorage.setItem("peliculaId", peliculaId);
                     
                     });
                 });
@@ -65,8 +66,7 @@ document.addEventListener("DOMContentLoaded", function() {
         }
      }
 
-});
-cargarPeliculas();
 
-console.log("ID de la película seleccionada:", peliculaId);
-export { peliculaId };
+    cargarPeliculas();
+
+});
